@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'amiko';
+    src: url('fonts/Amiko-Bold-webfont.eot');
+    src: url('fonts/Amiko-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amiko-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amiko-Regular-webfont.woff') format('woff'),
+         url('fonts/Amiko-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amiko-Regular-webfont.svg#amikoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+p
+{
+    font-family: amiko;
+    font-size: 0.5vw;
+}
+body
+{
+    background-color: #009999;
+}
+.chat
+{
+    border: 0.5vw solid #008080;
+    width: 30vw;
+    margin: auto;
+    background-color: #00b3b3;
+}
+input
+{
+    width: 11vw;
+    font-size: 0.6vw;
+}
