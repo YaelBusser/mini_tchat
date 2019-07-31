@@ -3,8 +3,6 @@
     include('bdd.php');
     if(!empty($_POST['btn']))
     {
-        $pseudo = htmlspecialchars($_POST['pseudo']);
-        $msg = htmlspecialchars($_POST['msg']);
         if(!empty($pseudo) AND !empty($msg))
         {
             $requete_msg = $bdd -> prepare('INSERT INTO chat(pseudo, msg, dateA, dateH) VALUES(?, ?, NOW(), NOW())');
@@ -14,6 +12,8 @@
         {
             $error = 'Veuillez remplir tous les champs !';
         }
+	$pseudo = htmlspecialchars($_POST['pseudo']);
+        $msg = htmlspecialchars($_POST['msg']);
     }
 ?>
 <!DOCTYPE html>
